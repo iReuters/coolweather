@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">华强北</string>
+    <string name="chapter1">第一章</string>
+    <string name="chapter2">第二章</string>
+    <string name="chapter3">第三章</string>
+    <string name="chapter4">第四章</string>
+    <string name="chapter5">第五章</string>
+    <string name="chapter6">第六章</string>
+    <string name="chapter7">第七章</string>
+    <string name="chapter8">第八章</string>
+    <string name="chapter9">第十章</string>
+    <string name="chapte10r">第十一章</string>
+    <string name="chapter11">第十二章</string>
+    <string name="chapter12">第十三章</string>
+    <string name="chapter13">第十四章</string>
+    <string name="chapter14">第十五章</string>
+</resources>
