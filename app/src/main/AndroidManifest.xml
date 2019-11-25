@@ -3,7 +3,9 @@
     package="com.example.firstandroidcode">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
 
     <application
         android:allowBackup="true"
@@ -12,12 +14,15 @@
         android:roundIcon="@mipmap/apple"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".chapter7.Chapter7"></activity>
+        <activity android:name=".chapter6.Chapter6" />
+
         <receiver
             android:name=".MyReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="aaa"/>
+                <action android:name="aaa" />
             </intent-filter>
         </receiver>
         <receiver

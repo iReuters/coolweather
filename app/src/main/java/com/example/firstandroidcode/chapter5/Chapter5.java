@@ -39,6 +39,7 @@ public class Chapter5 extends AppCompatActivity implements View.OnClickListener 
     }
 
     @Override
+
     protected void onDestroy() {
         super.onDestroy();
         unregisterReceiver(networkChangeReceiver);

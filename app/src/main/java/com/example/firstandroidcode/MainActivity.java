@@ -11,6 +11,8 @@ import android.view.View;
 import com.example.firstandroidcode.chapter2.Chapter2;
 import com.example.firstandroidcode.chapter3.Chapter3;
 import com.example.firstandroidcode.chapter5.Chapter5;
+import com.example.firstandroidcode.chapter6.Chapter6;
+import com.example.firstandroidcode.chapter7.Chapter7;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -24,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.main_btn2).setOnClickListener(this);
         findViewById(R.id.main_btn3).setOnClickListener(this);
         findViewById(R.id.main_btn5).setOnClickListener(this);
+        findViewById(R.id.main_btn6).setOnClickListener(this);
+        findViewById(R.id.main_btn7).setOnClickListener(this);
     }
 
     @Override
@@ -46,6 +50,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.main_btn5:
                 Intent intent4 = new Intent(MainActivity.this, Chapter5.class);
                 startActivity(intent4);
+                break;
+            case R.id.main_btn6:
+                Intent intent5 = new Intent(MainActivity.this, Chapter6.class);
+                startActivity(intent5);
+                break;
+            case R.id.main_btn7:
+                Intent intent6 = new Intent(MainActivity.this, Chapter7.class);
+                startActivity(intent6);
                 break;
                 default:
                     break;

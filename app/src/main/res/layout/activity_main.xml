@@ -32,5 +32,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/main_btn5"
         android:text="第五章"/>
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_btn6"
+        android:text="第六章"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_btn7"
+        android:text="第七章"/>
 </LinearLayout>
