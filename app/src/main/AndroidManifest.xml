@@ -30,13 +30,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".coolweather.CoolWeather"></activity>
+
         <service
             android:name=".chapter13.LongRunningService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
 
-        <activity android:name=".chapter13.Chapter13"
-            android:launchMode="singleTask"/>
+        <activity
+            android:name=".chapter13.Chapter13"
+            android:launchMode="singleTask" />
         <activity
             android:name=".chapter12.FruitActivity"
             android:theme="@style/FruitActivityTheme" />

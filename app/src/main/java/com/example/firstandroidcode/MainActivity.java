@@ -19,6 +19,8 @@ import com.example.firstandroidcode.chapter6.Chapter6;
 import com.example.firstandroidcode.chapter7.Chapter7;
 import com.example.firstandroidcode.chapter8.Chapter8;
 import com.example.firstandroidcode.chapter9.Chapter9;
+import com.example.firstandroidcode.coolweather.CoolWeather;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.main_btn11).setOnClickListener(this);
         findViewById(R.id.main_btn12).setOnClickListener(this);
         findViewById(R.id.main_btn13).setOnClickListener(this);
+        findViewById(R.id.main_btn14).setOnClickListener(this);
     }
 
     @Override
@@ -94,6 +97,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.main_btn13:
                 Intent intent12 = new Intent(MainActivity.this, Chapter13.class);
                 startActivity(intent12);
+                break;
+            case R.id.main_btn14:
+                Intent intent13 = new Intent(MainActivity.this, CoolWeather.class);
+                startActivity(intent13);
                 break;
                 default:
                     break;
