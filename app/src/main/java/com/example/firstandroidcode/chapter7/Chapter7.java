@@ -103,6 +103,7 @@ public class Chapter7 extends AppCompatActivity implements View.OnClickListener 
         try {
             Intent intent = new Intent(Intent.ACTION_CALL);
             intent.setData(Uri.parse("tel:112"));
+
             startActivity(intent);
         }catch (SecurityException e) {
             e.printStackTrace();
@@ -117,7 +118,7 @@ public class Chapter7 extends AppCompatActivity implements View.OnClickListener 
                     call();
                 }
                 else {
-                    Toast.makeText(Chapter7.this, "You denied the permission", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Chapter7.this, "You denied the permission!", Toast.LENGTH_SHORT).show();
                 }
                 break;
         }
