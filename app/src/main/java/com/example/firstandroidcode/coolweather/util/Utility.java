@@ -6,6 +6,8 @@ import com.example.firstandroidcode.R;
 import com.example.firstandroidcode.coolweather.database.City;
 import com.example.firstandroidcode.coolweather.database.County;
 import com.example.firstandroidcode.coolweather.database.Province;
+import com.example.firstandroidcode.coolweather.gson.Weather;
+import com.google.gson.Gson;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -77,6 +79,18 @@ public class Utility {
             }
         }
         return false;
+    }
+
+    public static Weather handleWeatherResponse(String response) {
+        try {
+            JSONObject jsonObject = new JSONObject(response);
+            JSONArray jsonArray = jsonObject.getJSONArray("HeWeather");
+            String weatherContent = jsonArray.getJSONObject(0).toString();
+            return new Gson().fromJson(weatherContent, Weather.class);
+        } catch (JSONException e) {
+
+        }
+        return null;
     }
 
 

@@ -7,6 +7,10 @@ import android.widget.Toast;
 import android.widget.Toolbar;
 
 public class MyToast extends Toast {
+
+    public static String mTAG = MyApplication.getContext().toString();
+
+    public static String TAG = mTAG.substring(0, mTAG.indexOf("@"));
     /**
      * Construct an empty Toast object.  You must call {@link #setView} before you
      * can call {@link #show}.
