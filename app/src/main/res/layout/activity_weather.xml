@@ -11,28 +11,43 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:id="@+id/bing_pic_image"/>
-
-    <ScrollView
+    <androidx.drawerlayout.widget.DrawerLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none"
-        android:overScrollMode="never"
-        android:id="@+id/activity_weather_sv1">
-        <LinearLayout
+        android:id="@+id/activity_weather_dl1">
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/activity_weather_srl1">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:overScrollMode="never"
+                    android:id="@+id/activity_weather_sv1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:fitsSystemWindows="true">
+                        <include layout="@layout/title_cool_weather"/>
+
+                        <include layout="@layout/now_cool_weather"/>
+
+                        <include layout="@layout/forecast_cool_weather"/>
+
+                        <include layout="@layout/aqi"/>
+
+                        <include layout="@layout/suggestion"/>
+                    </LinearLayout>
+                </ScrollView>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <fragment
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:fitsSystemWindows="true">
-            <include layout="@layout/title_cool_weather"/>
+            android:layout_height="match_parent"
+            android:id="@+id/activity_weather_fm1"
+            android:name="com.example.firstandroidcode.coolweather.ChooseAreaFragment"
+            android:layout_gravity="start"/>
 
-            <include layout="@layout/now_cool_weather"/>
-
-            <include layout="@layout/forecast_cool_weather"/>
-
-            <include layout="@layout/aqi"/>
-
-            <include layout="@layout/suggestion"/>
-        </LinearLayout>
-    </ScrollView>
-
+    </androidx.drawerlayout.widget.DrawerLayout>
 </FrameLayout>

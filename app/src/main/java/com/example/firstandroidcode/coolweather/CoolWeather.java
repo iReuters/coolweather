@@ -19,13 +19,13 @@ public class CoolWeather extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cool_weather);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        /*if (preferences.getString("weather", null) != null) {
+        if (preferences.getString("weather", null) != null) {
             Intent intent = new Intent(this, WeatherActivity.class);
             startActivity(intent);
             finish();
         } else {
             Log.d(MyToast.mTAG, "onCreate: " + "weather = null");;
 
-        }*/
+        }
     }
 }
